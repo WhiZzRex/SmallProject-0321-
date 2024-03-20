@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>興動福利蛋|解惑天地</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="qas.css">
+    <style>
+    h2{
+        margin: 0px;
+    }
+    h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    h4>a{
+        text-decoration: none;
+    }
+    
+    
+    
+    .bg-img{
+    height: 300px;
+    background-image: url(images/egg-bg.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    box-shadow: 0 0 10px #696969;
+    line-height: 200px;
+    text-align: center;
+    color: rgb(36, 1, 10);
+    font-size: 30px;
+    letter-spacing: 5px;
+    
+
+    }
+
+    @media (max-width:767px){
+    .bg-img{
+        height: 150px;
+        line-height: 100px;
+        font-size: 16px;
+    }
+
+    }
+    .breadcrumb{
+        background-color: lightgray;
+        padding: 5px 0px; /* 只有兩個數字代表 上下 左右 */
+        box-shadow: 0 0 10px #dddddd;
+    }
+    .breadcrumb ol{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+    .breadcrumb ol li{
+        float: left;
+    }
+    .breadcrumb ol li+li::before{
+        content: "\00a0/\00a0";
+    }
+    .breadcrumb a{
+        color: rgb(190, 104, 104);
+        text-decoration: none;
+    }
+    .breadcrumb a:hover{
+        color: black;
+    }
+    .qa, .myth{
+        margin-bottom: 20px;
+    }
+    
+
+    .accordion {
+    background-color: #f7f6f6;
+    color: #444;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+    box-shadow: 0 0 10px #696969;
+    }
+
+    .accordion:hover{
+        background-color: #e0e0e0;
+    }
+    .active {
+    background-color: #cccaca; 
+    }
+
+    .panel {
+    padding: 0 20px;
+    letter-spacing: 2px;
+    display: none;
+    background-color: #f7ceb1;
+    overflow: hidden;
+    box-shadow: 0 0 10px #696969;
+    }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header-container">
+            <h1 class="float-left"><a href="index.html">興動福利蛋</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">關於我們</a><span>ABOUT</span></li>
+                    <li><a href="products.html">商品介紹</a><span>PRODUCTS</span></li>
+                    <li><a href="#">解惑天地</a><span>Q/As</span></li>
+                    <li><a href="contactus.html">聯絡我們</a><span>CONTACT US</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="titleimg">
+        <img src="images/qa.png" alt="解惑天地">
+        <div class="centered">
+            解惑天地<br>
+            Q/As</As>
+        </div>
+    </div>
+   <!-- 麵包屑 breadcrumb start -->
+   <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <ol>
+                <li><a href="index.html">首頁</a></li>
+                <li>解惑天地</li>
+            </ol>
+        </div>
+    </div>
+<!-- 麵包屑 breadcrumb end -->
+    <!-- container start -->
+   
+    <h3>常見QA</h3>
+
+    <div class="qa">
+
+        <button class="accordion">為何蛋殼很難撥呢？</button>
+        <div class="panel">
+        <p>水煮蛋的蛋殼不好剝的原因在於蛋白含有的二氧化碳。二氧化碳遇熱後體積膨脹，蛋白壓迫薄膜，蛋殼就變得不容易剝落。愈是新鮮的蛋，蛋白二氧化碳的含量就愈豐富，因此蛋愈新鮮愈不好剝。</p>
+        </div>
+        
+        <button class="accordion">蛋殼上為什麼要噴印墨水？蒸水煮蛋時蛋上會藍綠色正常嗎？</button>
+        <div class="panel">
+        <p>蛋殼上印有「生產日期、畜牧場編號、生產方式」對消費者食品安全公開、透明的生產履歷，及產品來源追朔性。由於OKEGGS堅持不使用化學添加物故墨水不添加固型劑，高溫時墨水會溶化，油墨符合歐盟食品級規範，消費者可以安心食用</p>
+        </div>
+
+        <button class="accordion">雞蛋怎麼挑才是最新鮮？</button>
+        <div class="panel">
+        <p>許多人挑選雞蛋時，會認為越大顆越好蛋，其實母雞伴隨年齡增長，產道也會變寬，產下雞蛋的尺寸就會較大，不過其實大蛋小蛋營養價值都是差不多，產蛋週期的雞蛋，蛋殼硬度夠、蛋白Q度濃稠度更高、蛋黃蛋白層次分明不易破。</p>
+        </div>
+
+        <button class="accordion">雞蛋裡有血斑血點是正常的嗎？</button>
+        <div class="panel">
+        <p>蛋黃或蛋白上有血絲或血斑，這種狀況為「血斑蛋」。血斑蛋的成因，是母雞於排卵過程中，因濾泡破裂或輸卵管摩擦出血，造成血液滲到蛋黃或蛋白，並隨著蛋的形成被包覆在蛋內所形成。蛋品在新鮮狀況下，將蛋料理至煮熟，只要把血絲或血斑塊剔除，血斑蛋並不會有食安問題，也不會影響蛋之營養成分。</p>
+        </div>
+
+        <button class="accordion">為什麼水煮蛋去殼後，蛋黃與蛋白接觸表面會出現一層灰綠色？</button>
+        <div class="panel">
+        <p>蛋白中的硫化物與蛋黃的鐵反應生成之硫化亞鐵，是正常加工現象，不會影響食蛋的安全。殼蛋水煮去殼後，偶而會發現蛋黃表面會出現一薄層灰綠色，這是因為蛋在加熱時，蛋白中蛋白質的含硫胺基酸生成硫化物(主要是H2S)，與蛋黃的鐵(Fe)反應生成硫化亞鐵所致，這是正常現象，不會影響食蛋的安全。</p>
+        </div>
+
+        <button class="accordion">運送過程中如有破損該如何處理？</button>
+        <div class="panel">
+        <p>運輸過程中如有任何破損請記得先拍照，並請致電05-12345678有專人為您處理。</p>
+        </div>
+
+        <button class="accordion">市售盒裝洗選蛋買回家後，自己需不需要再洗一次？</button>
+        <div class="panel">
+        <p>洗選蛋買回家後若非馬上食用，可以等到烹煮之前，再用清水沖洗、手指在蛋殼上搓揉一會兒，然後立刻打蛋入菜，如此可避免敲開蛋殼時，表面的髒污接觸到蛋白蛋黃。</p>
+        </div>
+
+        <button class="accordion">市售洗選雞蛋的大小共分幾級？</button>
+        <div class="panel">
+        <p>依據中華民國CNS國家標準，雞蛋大小共分成五級，每6公克為一級距。 從最大到最小依序為：<br>
+        ◎ 特大蛋(LL) 粒重介於66~72公克 <br>
+        ◎ 大蛋(L) 粒重介於60~66公克<br>
+        ◎ 中蛋(M) 粒重介於54~60公克<br>
+        ◎ 小蛋(S) 粒重介於48~54公克<br>
+        ◎ 特小蛋(SS) 粒重介於42~48公克<br>
+        而目前於市面消費通路所販售的蛋，多半介於58~64公克間，也就是以L蛋為主。
+        </p>
+        </div>
+    </div>
+    <h3>破解迷思</h3>
+    <div class="myth">
+
+        <button class="accordion">褐色雞蛋比白色雞蛋營養？</button>
+        <div class="panel">
+        <p>蛋殼的顏色主要來自雞隻輸卵管分泌的色素，與雞隻的品種有關，白色羽毛的雞產下白殼蛋，紅褐色羽毛的雞則會產下褐殼蛋，相同飼料養雞，還沒有充足的資料證明褐色蛋比白色蛋營養。</p>
+        </div>
+        
+        <button class="accordion">雞蛋的蛋黃越紅越好嗎？</button>
+        <div class="panel">
+        <p>蛋黃的顏色與飼料所含的色素有關，飼料含有越多的胡蘿蔔或紅辣椒，母雞就會產下橙黃色澤蛋黃的雞蛋。正常的蛋黃由於存在胡蘿蔔素與葉黃素，應呈現橙黃色，過於鮮紅的蛋黃，倒要擔心是否飼料添加了非法色素。</p>
+        </div>
+
+        <button class="accordion">年長者可以多吃雞蛋嗎？</button>
+        <div class="panel">
+        <p>吃雞蛋不需要擔心蛋黃中的膽固醇，除非是因為人體肝臟代謝失調，否則體內的膽固醇並不會受膳食中的膽固醇所影響。再從好的方面來說，雞蛋蛋黃中含有豐富卵磷脂，可降低人體血液中的低密度脂蛋白(LDL，又稱壞的膽固醇)，所以適當攝取雞蛋，反而能幫助血液流通順暢。</p>
+        </div>
+
+        <button class="accordion">生食雞蛋較營養？</button>
+        <div class="panel">
+        <p>雞蛋生食有兩個顧慮，一是微生物污染，例如沙門氏菌及大腸桿菌；另一是蛋白成分的營養抑制，生鮮雞蛋的蛋白含有許多不利消化、抗營養吸收及引起過敏之物質，因此，雞蛋要煮熟食用，才能吸收到全部的蛋白營養。總而言之，從食安角度，較不鼓勵食用生蛋。</p>
+        </div>
+
+    </div>
+
+    <h4>若是有其他任何問題請致電05-12345678有專人為您處理，或使用<a href="contactus.html">聯絡我們</a>頁面回報問題，我們將盡速為您服務。</h4>
+
+        <div class="bg-img">
+        </div>
+
+    <!-- container end -->
+
+
+    <a href="#" class="pagetop" id="pagetopBtn"><img src="images/eggicon.png" alt="pagetop"></a>
+
+    <div class="container social-icon">
+        <a class="icon-fbcolor" href="https://www.facebook.com/starbuckstaiwan?ref=nf" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        <a class="icon-igcolor" href="https://www.instagram.com/starbuckstw/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a class="icon-ytcolor" href="https://www.youtube.com/user/STARBUCKSTW" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+        <a class="icon-linecolor" href="https://line.me/R/ti/p/@471vnurh?from=page&openQrModal=true&searchId=471vnurh" target="_blank"><i class="fa-brands fa-line"></i></a>
+    </div>
+
+    <footer>
+        <div class="container" >
+            copyright &copy; 2024. <br>
+            此網頁僅作為上課練習用
+        </div>
+
+    </footer>
+    <script src="qas.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>興動福利蛋|關於我們</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+
+    <style>
+        h2 {
+            text-align: center;
+            color: rgb(95, 21, 215);
+            font-size: 28px;
+            list-style-type: none;
+        }
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .sidebar a {
+            color: lightsalmon;
+        }
+
+        .menu {
+            width: 80%;
+        }
+
+        .img {
+            text-align: center;
+        }
+
+        /* tab start */
+        .tab {
+            float: left;
+            /* background-color: #f1f1f1; */
+            max-width: 10%;
+            height: auto;
+            width: 100%;
+        }
+
+        .tab::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+            border-bottom: solid 2px #a5f3d8;
+            
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #29f7af;
+            box-shadow: 0 0 10px #45f3b6;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #a5f3d8;
+            box-shadow: 0 0 10px #45f3b6;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            width: 90%;
+            border-left: none;
+            height: auto;
+        }
+
+
+        /* tab end */
+
+        /* timeline start */
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgb(14, 14, 14);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .timelime-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            border-radius: 20px;
+
+        }
+
+        /* The circles on the timeline */
+        .timelime-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 10px #696969;
+        }
+
+        /* Place the container to the left */
+        .left {
+            left: 0;
+        }
+
+        /* Place the container to the right */
+        .right {
+            left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .right::after {
+            left: -16px;
+        }
+
+        /* The actual content */
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #696969;
+        }
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 767px) {
+
+            /* Place the timelime to the left */
+            .timeline::after {
+                left: 31px;
+            }
+
+            /* Full-width containers */
+            .timelime-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .timelime-container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
+        }
+
+        /* timeline end */
+
+        /* farmintro start */
+        .farmintro-container img {
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .farmintro-container {
+            position: relative;
+        }
+
+        .farmintro-container p {
+            font-size: 20px;
+            letter-spacing: 5px;
+            line-height: 50px;
+        }
+
+        /* Hide the images by default */
+        .farmintro-slides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #efca89;
+            padding: 2px 16px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row img {
+            height: 120px;
+        }
+
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+        .demo img {
+            height: 450px;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        .reportfile {
+            list-style-type: none;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        .reportfile li {
+            padding: 20px;
+            border-bottom: solid 1px lightblue;
+
+        }
+
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 5px 5px;
+            cursor: pointer;
+            font-size: 12px;
+            float: right;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- .container>h1.float-left>a{網站名稱}^nav.float-left>ul>li*4>a{item$}  -->
+        <div class="header-container">
+            <h1 class="float-left"><a href="index.html">興動福利蛋</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">關於我們</a><span>ABOUT</span></li>
+                    <li><a href="products.html">商品系列</a><span>PRODUCTS</span></li>
+                    <li><a href="qas.html">解惑天地</a><span>Q/As</span></li>
+                    <li><a href="contactus.html">聯絡我們</a><span>CONTACT US</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="titleimg">
+        <img src="images/about.jpg" alt="關於我們">
+        <div class="centered">
+            關於我們<br>
+            About
+        </div>
+    </div>
+    <!-- 麵包屑 breadcrumb start -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <ol>
+                <li><a href="index.html">首頁</a></li>
+                <li>關於我們</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 麵包屑 breadcrumb end -->
+
+    <div class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'history')" id="defaultOpen">企業沿革</button>
+            <button class="tablinks" onclick="openCity(event, 'farmintro')">雞舍環境</button>
+            <button class="tablinks" onclick="openCity(event, 'report')">檢驗報告</button>
+        </div>
+
+        <div id="history" class="tabcontent">
+
+            <div class="timeline">
+                <div class="timelime-container left">
+                    <div class="content">
+                        <h2>2002年</h2><br>
+                        <p>我們的創辦人在家族農場開始養雞，這是一個小規模的家庭式農場，主要經營傳統的雞蛋生產；
+                            並將生產的雞蛋銷售給當地的小型雜貨店和農貿市場，以維持生計。</p>
+                    </div>
+                </div>
+                <div class="timelime-container right">
+                    <div class="content">
+                        <h2>2005年</h2>
+                        <p>隨著產品品質的提高和市場需求的增加，我們逐漸擴大了業務範圍，開始進入鄰近城市的市場，並建立了一些固定的客戶群。</p>
+                    </div>
+                </div>
+                <div class="timelime-container left">
+                    <div class="content">
+                        <h2>2007年</h2>
+                        <p>開始引進先進的養殖技術，包括更先進的雞舍設備、營養學方面的改進以及疾病管理措施的加強，以提高雞蛋的生產效率和品質。
+                            ，為了提升品牌知名度和市場競爭力，我們成立了自己的品牌，並開始進行包裝設計和行銷策略的創新。</p>
+                    </div>
+                </div>
+                <div class="timelime-container right">
+                    <div class="content">
+                        <h2>2010年</h2>
+                        <p>隨著互聯網的普及，我們開始在網絡上建立銷售渠道，並進行線上宣傳和促銷活動，以擴大我們的市場規模。</p>
+                    </div>
+                </div>
+                <div class="timelime-container left">
+                    <div class="content">
+                        <h2>2013年</h2>
+                        <p>市場份額穩步增長，公司業績顯著提升，我們開始考慮擴大生產規模以滿足市場需求。
+                            ，進一步擴大了生產規模，與更多的農場合作，通過供應鏈的優化和擴張，確保產品供應的穩定性和品質。</p>
+                    </div>
+                </div>
+                <div class="timelime-container right">
+                    <div class="content">
+                        <h2>2020年至今</h2>
+                        <p>注重可持續發展，將有機養殖和環境友好型生產納入我們的業務策略，以回應消費者對產品品質和環保的不斷增長的需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="farmintro" class="tabcontent">
+            <div class="farmintro-container">
+                <h2>雞舍環境介紹</h2>
+                <p>我們致力於提供高品質雞蛋的地方。我們的雞舍設計經過精心考慮，旨在提供最佳的生活條件，以確保雞隻的福利和生產效率。
+                    <br>
+                    首先，讓我們介紹一下我們雞舍的設施。雞舍內部設有多個層次的福利籠，每個籠子都設有舒適的巢箱，供雞隻產蛋和休息。籠子的尺寸設計得足夠寬敞，讓雞隻可以自由行動、展翅和進行日常活動。我們還在雞舍內部設置了自動化的飼料和飲水系統，確保雞隻隨時都有充足的食物和水源。
+                    <br>
+                    至於福利籠飼養方式，我們採用了先進的設計和管理方法，以確保雞隻的福利得到最大程度的保障。每個籠子都設有適當的照明和通風系統，保持舒適的溫度和空氣流通。此外，我們定期檢查和維護籠子，防止任何損壞或安全問題發生。
+                    <br>
+                    我們重視雞隻的福利，這是我們養殖過程中的首要考量。我們遵循相關的福利標準和規定，並通過培訓我們的員工，確保他們對雞隻的關愛和照顧。我們也定期與動物福利專家合作，不斷改進我們的飼養方式，以確保我們的雞隻在健康、快樂和安全的環境中生活。
+                    <br>
+                    我們期待您的訪問，讓您有機會了解我們的飼養理念和農場運營。如果您有任何疑問或想了解更多信息，請隨時與我們聯繫。感謝您對我們農場的關注和支持！
+                </p>
+                <div class="farmintro-slides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/farm1.jpg">
+                </div>
+
+                <div class="farmintro-slides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/farm2.jpg">
+                </div>
+
+                <div class="farmintro-slides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/farm3.jpg">
+                </div>
+
+                <div class="farmintro-slides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/farm4.jpg">
+                </div>
+
+                <div class="farmintro-slides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/farm5.jpg">
+                </div>
+
+                <div class="farmintro-slides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/farm6.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm1.jpg" onclick="currentSlide(1)" alt="雞舍環境-1">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm2.jpg" onclick="currentSlide(2)" alt="雞舍環境-2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm3.jpg" onclick="currentSlide(3)" alt="雞舍環境-3">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm4.jpg" onclick="currentSlide(4)" alt="雞舍環境-4">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm5.jpg" onclick="currentSlide(5)" alt="雞舍環境-5">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/farm6.jpg" onclick="currentSlide(6)" alt="雞舍環境-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="report" class="tabcontent">
+            <div class="report-conatainer">
+                <h2>檢驗報告</h2>
+                <ul class="reportfile">
+                    <li><span>2024.02月份【鉛.銅】檢驗報告</span><button class="btn" onclick="downloadFile1()"><i
+                                class="fa fa-download"></i> Download</button></li>
+                    <li><span>2024.02月份【氯黴素類】檢驗報告</span><button
+                                class="btn" onclick="downloadFile2()"><i class="fa fa-download"></i> Download</button>
+                    </li>
+                    <li><span>2024.02月份【動物用藥殘留分析】檢驗報告</span><a href="file/file3.pdf"
+                            download="202402月份【動物用藥殘留分析】檢驗報告"><button class="btn"><i class="fa fa-download"></i>
+                                Download</button></a></li>
+                    <li><span>2024.02月份【沙門氏桿菌】檢驗報告</span><a href="file/file1.pdf" download="202402月份【沙門氏桿菌】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2024.01月份【鉛.銅】檢驗報告</span><a href="file/file1.pdf" download="202401月份【鉛銅】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2024.01月份【氯黴素類】檢驗報告</spa><a href="file/file1.pdf" download="202401月份【氯黴素類】檢驗報告"><button
+                                    class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2024.01月份【動物用藥殘留分析】檢驗報告</span><a href="file/file1.pdf"
+                            download="202401月份【動物用藥殘留分析】檢驗報告"><button class="btn"><i class="fa fa-download"></i>
+                                Download</button></a></li>
+                    <li><span>2024.01月份【沙門氏桿菌】檢驗報告</span><a href="file/file1.pdf" download="202401月份【沙門氏桿菌】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2023.12月份【鉛.銅】檢驗報告</span><a href="file/file1.pdf" download="202312月份【鉛銅】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2023.12月份【氯黴素類】檢驗報告</span><a href="file/file1.pdf" download="202312月份【氯黴素類】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+                    <li><span>2023.12月份【動物用藥殘留分析】檢驗報告</span><a href="file/file1.pdf"
+                            download="202312月份【動物用藥殘留分析】檢驗報告"><button class="btn"><i class="fa fa-download"></i>
+                                Download</button></a></li>
+                    <li><span>2023.12月份【沙門氏桿菌】檢驗報告</span><a href="file/file1.pdf" download="202312月份【沙門氏桿菌】檢驗報告"><button
+                                class="btn"><i class="fa fa-download"></i> Download</button></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+    <a href="#" class="pagetop" id="pagetopBtn"><img src="images/eggicon.png" alt="pagetop"></a>
+
+    <div class="container social-icon">
+        <a class="icon-fbcolor" href="https://www.facebook.com/starbuckstaiwan?ref=nf" target="_blank"><i
+                class="fa-brands fa-square-facebook"></i></a>
+        <a class="icon-igcolor" href="https://www.instagram.com/starbuckstw/" target="_blank"><i
+                class="fa-brands fa-square-instagram"></i></a>
+        <a class="icon-ytcolor" href="https://www.youtube.com/user/STARBUCKSTW" target="_blank"><i
+                class="fa-brands fa-square-youtube"></i></a>
+        <a class="icon-linecolor" href="https://line.me/R/ti/p/@471vnurh?from=page&openQrModal=true&searchId=471vnurh"
+            target="_blank"><i class="fa-brands fa-line"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            copyright &copy; 2024. <br>
+            此網頁僅作為上課練習用
+        </div>
+    </footer>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("farmintro-slides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        let mybutton = document.getElementById("pagetopBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function downloadFile1() {
+            // 替換這裡的URL為您檔案的實際路徑
+            var fileUrl = 'file/file1.pdf';
+
+            // 創建一個隱藏的<a>元素
+            var a = document.createElement('a');
+            a.style.display = 'none';
+            document.body.appendChild(a);
+
+            // 設置<a>元素的屬性
+            a.href = fileUrl;
+            a.download = '202402月份【鉛銅】檢驗報告'; // 設置下載的檔案名稱
+
+            // 模擬點擊下載
+            a.click();
+
+            // 刪除<a>元素
+            document.body.removeChild(a);
+        }
+
+        function downloadFile2() {
+            // 替換這裡的URL為您檔案的實際路徑
+            var fileUrl = 'file/file2.pdf';
+
+            // 創建一個隱藏的<a>元素
+            var a = document.createElement('a');
+            a.style.display = 'none';
+            document.body.appendChild(a);
+
+            // 設置<a>元素的屬性
+            a.href = fileUrl;
+            a.download = '202402月份【氯黴素類】檢驗報告'; // 設置下載的檔案名稱
+
+            // 模擬點擊下載
+            a.click();
+
+            // 刪除<a>元素
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+
+</html>

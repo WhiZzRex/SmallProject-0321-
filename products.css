@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(255, 255, 245);
+    font-family: "Noto Serif TC", serif;
+}
+
+header {
+    background-color: #CCDDD3;
+    height: 70px;
+    max-width: 100%;
+    margin-bottom: 2px;
+    box-shadow: 0 0 15px #200c00;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.header-container {
+    max-width: 100%;
+}
+
+.header-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    margin: 0px;
+    width: 20%;
+    text-align: center;
+}
+
+nav {
+    width: 60%;
+    float: right;
+}
+
+nav>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+nav>ul>li {
+    width: 25%;
+    float: left;
+}
+
+nav>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+nav>ul>li>span {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(226, 2, 2);
+    opacity: 0;
+}
+
+nav>ul>li>a:hover~span {
+    opacity: 1;
+}
+
+nav>ul>li>a:hover {
+    color: rgb(177, 127, 36);
+}
+
+@media (max-width:767px) {
+    nav>ul>li>a {
+        font-size: 14px;
+    }
+}
+
+.titleimg {
+    position: relative;
+    box-shadow: 0 0 10px #696969;
+    margin: 0px;
+    max-height: 450px;
+}
+
+.titleimg img {
+    width: 100%;
+    max-height: 450px;
+    opacity: 0.4;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 247, 248);
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    background-color: rgb(236, 236, 236);
+    padding: 5px 0px;
+    box-shadow: 0 0 10px #dddddd;
+    margin-bottom: 10px;
+}
+
+.breadcrumb-container {
+    max-width: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+.breadcrumb-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.breadcrumb ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.breadcrumb ol li {
+    float: left;
+}
+
+.breadcrumb ol li+li::before {
+    content: "\00a0/\00a0";
+}
+
+.breadcrumb a {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: black;
+}
+
+h1>a {
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+}
+
+.container {
+    color: black;
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
+    color: wheat;
+}
+
+.product {
+    width: 25%;
+    /* background-color: rgb(238, 195, 195); */
+    /* border: 1px solid black; */
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .product {
+        width: 50%;
+    }
+}
+
+
+.menu {
+    width: 72%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.newtag {
+    top: -7px;
+    right: -7px;
+    background-color: rgb(208, 195, 12);
+    font-size: 16px;
+    color: rgb(68, 44, 44);
+    border-radius: 9px;
+}
+
+.hottag {
+    top: -7px;
+    right: -7px;
+    background-color: rgb(251, 118, 118);
+    font-size: 16px;
+    color: rgb(68, 44, 44);
+    border-radius: 50%;
+}
+
+.float-left {
+    float: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    border-radius: 2px;
+}
+
+.sidebar>ul {
+    padding: 0px;
+}
+
+.pagetop {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    text-align: center;
+    opacity: 0.7;
+    z-index: 99;
+}
+
+.pagetop img {
+    width: 50px;
+}
+
+.pagetop:hover {
+    opacity: 1;
+}
+
+.social-icon {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-icon a {
+    color: gray;
+    font-size: 32px;
+    margin-right: 8px;
+}
+
+.icon-fbcolor:hover {
+    color: #4267B2;
+}
+
+.icon-igcolor:hover {
+    color: #E1306C;
+}
+
+.icon-ytcolor:hover {
+    color: #FF0000;
+}
+
+.icon-linecolor:hover {
+    color: #06c755;
+}
+
+footer {
+    background-color: gray;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+}
